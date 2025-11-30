@@ -4,7 +4,7 @@ It encodes JSON-compatible structures like objects, arrays, and primitives in a 
 Unlike JSON's verbose punctuation-heavy syntax, TOON uses YAML-like indentation for nested objects and CSV-style tabular layouts for uniform arrays of objects, minimizing redundant elements like quotes and braces
 
 
-#Input JSON
+# Input JSON
 
 invoice_data = {
         "company": "Acme Corp",
@@ -48,7 +48,7 @@ invoice_data = {
     }
 
 
-#TOON 
+# TOON 
 
 company: Acme Corp
 invoices[3]:
@@ -75,7 +75,7 @@ due: 2025-12-25
 status: pending
 
 
-#Model Output
+# Model Output
 
 The invoices for Charlie Co. are:
 - id: INV003
@@ -110,7 +110,7 @@ status: pending
 }
 
 
-#Reponse by passing JSON datatype
+# Reponse by passing JSON datatype
 
 {
    "ResponseMetadata":{
@@ -132,7 +132,7 @@ status: pending
    "body":<botocore.response.StreamingBody object at 0x7f9cc02f0790>
 }
 
-#Summary of Improvements
+# Summary of Improvements
 
 | Metric            | JSON    | TOON   | % Reduction |
 | ----------------- | ------- | ------ | ----------- |
